@@ -1,0 +1,30 @@
+{
+  "name": "home-dashboard-mqtt",
+  "version": "1.0.0",
+  "description": "Dashboard for home",
+  "main": "dist/index.mjs",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon --watch dist --exec \"node dist/index.mjs\"",
+    "start": "node dist/index.mjs"
+  },
+  "keywords": [
+    "Home",
+    "Dashboard"
+  ],
+  "author": "Martijn Dirksen",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "eslint": "^8.23.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "binary-parser": "^2.1.0",
+    "dotenv": "^16.0.2"
+  }
+}
